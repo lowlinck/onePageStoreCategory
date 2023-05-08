@@ -23,9 +23,7 @@ $.ajax({
         '<a class="p_img_href  not-slider" href="#">' +
         '<img src="http://one.loc/' +
         product.image_path +
-        '" data-src="http://one.loc/' +
-        product.image_path +
-        '" alt="' +
+        '"  alt="' +
         product.product_name +
         '&quot;"' +
         ' title="Buy ' +
@@ -59,10 +57,6 @@ $.ajax({
           col_product.style.display = "block";
         }
       }
-    
-    
-  
-
   },
   error: console.log,
 });
@@ -98,8 +92,7 @@ $(document).on("click", "label.radio", function (e) {
           '<a class="p_img_href  not-slider" href="#">' +
           '<img src="http://one.loc/' +
           product.image_path +
-          '" data-src="http://one.loc/' +
-          product.image_path +
+         
           '" alt="' +
           product.product_name +
           '&quot;"' +
@@ -167,7 +160,7 @@ $(document).on('click', '.add2cart', function(e) {
                 var productHTML =
                 '<div class=" col_product" data-product="' + product.product_id +'"  data-category="' + product.category_id +
                 '">' +
-                '<img src="http://one.loc/' + product.image_path +'" data-src="http://one.loc/' +product.image_path +
+                '<img src="http://one.loc/' + product.image_path +
                 '" alt="' + product.product_name +'"><div"' + product.product_name +'&quot;" height="150" width="150" class="anim"/>' +
                 "</a>" +               
                 '<p class="price"><span class="new_price">$' +
